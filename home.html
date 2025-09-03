@@ -30,12 +30,12 @@
           <div class="divider"></div>
           <!-- user action button -->
           <div>
-            <button class="btn btn-lg">Add Money</button>
-            <button class="btn btn-lg">Cash Out</button>
+            <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
+            <button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
           </div>
           <div class="divider"></div>
           <!-- add money form start -->
-          <div class="hidden card bg-white w-15/16 max-w-sm shrink-0 shadow-2xl mx-auto">
+          <div id="add-money-form" class="card bg-white w-15/16 max-w-sm shrink-0 shadow-2xl mx-auto">
             <div class="card-body">
               <fieldset class="fieldset">
                 <label class="label text-black font-bold">Amount</label>
@@ -49,10 +49,10 @@
           <!-- add money form end -->
 
           <!-- cash out form start -->
-          <div class="card bg-white w-15/16 max-w-sm shrink-0 shadow-2xl mx-auto">
+          <div id="cash-out-form" class="hidden card bg-white w-15/16 max-w-sm shrink-0 shadow-2xl mx-auto">
             <div class="card-body">
               <fieldset class="fieldset">
-                <label class="label text-black font-bold">Amount</label>
+                <label class="label text-black font-bold">Cash Out Amount</label>
                 <input id="input-cash-out" type="text" class="input" placeholder="Cash Out Amount.." />
                 <label class="label text-black font-bold mt-2">Pin</label>
                 <input id="input-cashout-pin-number" type="password" class="input" autocomplete="off" placeholder="Pin Number.." />
@@ -66,6 +66,7 @@
 
       <script src="js/home.js"></script>
       <script src="js/cashout.js"></script>
+      <script src="js/features.js"></script>
     </main>
   </body>
 </html>
