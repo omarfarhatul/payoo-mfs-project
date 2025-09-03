@@ -32,8 +32,11 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         const blanceNumber=parseFloat(balance);
         const newBalance=addMoneyNumber+blanceNumber;
         console.log(newBalance);
+
+        // step-6: update the blance in the DOM/UI
+        document.getElementById('account-balance').innerText=newBalance;
     }
     else{
-        alert('Invalid');
+        alert('Invalid amount or pin. Please try again later.');
     }
 });
