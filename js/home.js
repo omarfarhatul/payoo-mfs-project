@@ -28,8 +28,10 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         console.log(balance);
 
         // step-5: add addMoneyInput with balance
-        const newBalance=balance+addMoneyInput;
-        
+        const addMoneyNumber=parseFloat(addMoneyInput);
+        const blanceNumber=parseFloat(balance);
+        const newBalance=addMoneyNumber+blanceNumber;
+        console.log(newBalance);
     }
     else{
         alert('Invalid');
