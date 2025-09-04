@@ -1,4 +1,4 @@
-document.getElementById('btn-cash-out').addEventListener('click', function(event){
+/* document.getElementById('btn-cash-out').addEventListener('click', function(event){
     event.preventDefault();
     console.log('cash out button clicked.');
 
@@ -21,4 +21,12 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
     else{
         alert('Invalid amount or pin. Please try again later.');
     }
+}); */
+
+document.getElementById('btn-cash-out').addEventListener('click', function(event){
+    event.preventDefault();
+
+    const cashOut=getInputFieldValueById('input-cash-out');
+    const pinNumber=getInputFieldValueById('input-cashout-pin-number');
+    console.log(cashOut, pinNumber);
 });
