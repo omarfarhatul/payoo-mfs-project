@@ -4,8 +4,9 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     const addMoney=getInputFieldValueById('input-add-money');
     const pinNumber=getInputFieldValueById('input-pin-number');
 
+    // validation check
     if(isNaN(addMoney)){
-        alert('Failed to add money');
+        alert('Failed to add money...');
         return;
     }
 

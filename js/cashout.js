@@ -30,6 +30,13 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
 
     const cashOut=getInputFieldValueById('input-cash-out');
     const pinNumber=getInputFieldValueById('input-cashout-pin-number');
+
+    // validation check
+    if(isNaN(cashOut)){
+        alert('Failed to Cash Out...');
+        return;
+    }
+
     // console.log(cashOut, pinNumber);
     if(pinNumber===1234){
         const balance=getTextFieldValueById('account-balance');
