@@ -40,6 +40,12 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
     // console.log(cashOut, pinNumber);
     if(pinNumber===1234){
         const balance=getTextFieldValueById('account-balance');
+
+        if(cashOut > balance){
+            alert('You do not have enough money to Cash Out!');
+            return;
+        }
+
         const newBalance=balance-cashOut;
         document.getElementById('account-balance').innerText=newBalance;
 
