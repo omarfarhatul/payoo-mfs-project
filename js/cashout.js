@@ -28,5 +28,13 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
 
     const cashOut=getInputFieldValueById('input-cash-out');
     const pinNumber=getInputFieldValueById('input-cashout-pin-number');
-    console.log(cashOut, pinNumber);
+    // console.log(cashOut, pinNumber);
+    if(pinNumber===1234){
+        const balance=getTextFieldValueById('account-balance');
+        const newBalance=balance-cashOut;
+        document.getElementById('account-balance').innerText=newBalance;
+    }
+    else{
+        alert('Invalied amount or pin number! Please try again later.');
+    }
 });
