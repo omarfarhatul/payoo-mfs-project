@@ -24,8 +24,8 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
 
         // should be a common function
         document.getElementById('transaction-container').appendChild(p);
-    }
-    else{
-        alert('Failed to add the money.');
-    }
+        }
+        else{
+            alert('Failed to add the money.');
+        }
 });

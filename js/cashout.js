@@ -59,8 +59,8 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
         `
 
         document.getElementById('transaction-container').appendChild(div);
-    }
-    else{
-        alert('Invalied amount or pin number! Please try again later.');
-    }
+        }
+        else{
+            alert('Invalied amount or pin number! Please try again later.');
+        }
 });
